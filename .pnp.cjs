@@ -35,7 +35,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["parcel", "npm:2.2.1"]
+            ["@parcel/packager-ts", "npm:2.2.1"],
+            ["@parcel/transformer-typescript-types", "virtual:13cd725991d37480b5c6e6b0b8ba647c7790c30d0062805352f2627a0ecf72e13584a914b2bc582e1acfd2ca2a9d38c2a96911a26f8677d01c2cc507c0af0a52#npm:2.2.1"],
+            ["parcel", "npm:2.2.1"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",
         }]
@@ -1017,6 +1020,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@parcel/packager-ts", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/@parcel-packager-ts-npm-2.2.1-73c44a274e-733fac0efd.zip/node_modules/@parcel/packager-ts/",
+          "packageDependencies": [
+            ["@parcel/packager-ts", "npm:2.2.1"],
+            ["@parcel/plugin", "npm:2.2.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@parcel/plugin", [
         ["npm:2.2.1", {
           "packageLocation": "./.yarn/cache/@parcel-plugin-npm-2.2.1-53846609c9-47712a2af2.zip/node_modules/@parcel/plugin/",
@@ -1302,6 +1315,56 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["posthtml-parser", "npm:0.10.2"],
             ["posthtml-render", "npm:3.0.0"],
             ["semver", "npm:5.7.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@parcel/transformer-typescript-types", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/@parcel-transformer-typescript-types-npm-2.2.1-94affaee8f-71cfaaac62.zip/node_modules/@parcel/transformer-typescript-types/",
+          "packageDependencies": [
+            ["@parcel/transformer-typescript-types", "npm:2.2.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:13cd725991d37480b5c6e6b0b8ba647c7790c30d0062805352f2627a0ecf72e13584a914b2bc582e1acfd2ca2a9d38c2a96911a26f8677d01c2cc507c0af0a52#npm:2.2.1", {
+          "packageLocation": "./.yarn/__virtual__/@parcel-transformer-typescript-types-virtual-1d0dc88f26/0/cache/@parcel-transformer-typescript-types-npm-2.2.1-94affaee8f-71cfaaac62.zip/node_modules/@parcel/transformer-typescript-types/",
+          "packageDependencies": [
+            ["@parcel/transformer-typescript-types", "virtual:13cd725991d37480b5c6e6b0b8ba647c7790c30d0062805352f2627a0ecf72e13584a914b2bc582e1acfd2ca2a9d38c2a96911a26f8677d01c2cc507c0af0a52#npm:2.2.1"],
+            ["@parcel/diagnostic", "npm:2.2.1"],
+            ["@parcel/plugin", "npm:2.2.1"],
+            ["@parcel/source-map", "npm:2.0.1"],
+            ["@parcel/ts-utils", "virtual:1d0dc88f262af70f378e2cdcdd4f9c7cb93c912b5e3b893b74f0e1cfd971b3569fb9083852384035e2be59c4f668549871fe6aa537d69ada8fcda85db2fc4e93#npm:2.2.1"],
+            ["@types/typescript", null],
+            ["nullthrows", "npm:1.1.1"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@parcel/ts-utils", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/@parcel-ts-utils-npm-2.2.1-b43f3d95de-9781ff4003.zip/node_modules/@parcel/ts-utils/",
+          "packageDependencies": [
+            ["@parcel/ts-utils", "npm:2.2.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:1d0dc88f262af70f378e2cdcdd4f9c7cb93c912b5e3b893b74f0e1cfd971b3569fb9083852384035e2be59c4f668549871fe6aa537d69ada8fcda85db2fc4e93#npm:2.2.1", {
+          "packageLocation": "./.yarn/__virtual__/@parcel-ts-utils-virtual-5a93a65252/0/cache/@parcel-ts-utils-npm-2.2.1-b43f3d95de-9781ff4003.zip/node_modules/@parcel/ts-utils/",
+          "packageDependencies": [
+            ["@parcel/ts-utils", "virtual:1d0dc88f262af70f378e2cdcdd4f9c7cb93c912b5e3b893b74f0e1cfd971b3569fb9083852384035e2be59c4f668549871fe6aa537d69ada8fcda85db2fc4e93#npm:2.2.1"],
+            ["@types/typescript", null],
+            ["nullthrows", "npm:1.1.1"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
+          ],
+          "packagePeers": [
+            "@types/typescript",
+            "typescript"
           ],
           "linkType": "HARD",
         }]
@@ -4522,7 +4585,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["okami", "workspace:."],
-            ["parcel", "npm:2.2.1"]
+            ["@parcel/packager-ts", "npm:2.2.1"],
+            ["@parcel/transformer-typescript-types", "virtual:13cd725991d37480b5c6e6b0b8ba647c7790c30d0062805352f2627a0ecf72e13584a914b2bc582e1acfd2ca2a9d38c2a96911a26f8677d01c2cc507c0af0a52#npm:2.2.1"],
+            ["parcel", "npm:2.2.1"],
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",
         }]
@@ -6482,6 +6548,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.21.3-5ff2a9c6fd-e6b32a3b38.zip/node_modules/type-fest/",
           "packageDependencies": [
             ["type-fest", "npm:0.21.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53", {
+          "packageLocation": "./.yarn/cache/typescript-patch-0b90225f97-2e488dde7d.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "HARD",
         }]

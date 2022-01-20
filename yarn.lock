@@ -769,6 +769,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parcel/packager-ts@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@parcel/packager-ts@npm:2.2.1"
+  dependencies:
+    "@parcel/plugin": ^2.2.1
+  checksum: 733fac0efdd6e6e1f9f9296dda0875676fbce5e42eeb74106653ef45989bc637686c6f8c9ae83a292ca33f036d216002e3babe6467e409912f4caa8ca7b47148
+  languageName: node
+  linkType: hard
+
 "@parcel/plugin@npm:^2.2.1":
   version: 2.2.1
   resolution: "@parcel/plugin@npm:2.2.1"
@@ -1034,6 +1043,32 @@ __metadata:
     posthtml-render: ^3.0.0
     semver: ^5.7.1
   checksum: a2c6c353b86d3d887bc1d1aa9d52fa7697553056f12b0fb175aedaed4d97c9bf3c3f04bc04d38ffee728972cedd98df645a354ca8cbad33d9772ed607a6cafe6
+  languageName: node
+  linkType: hard
+
+"@parcel/transformer-typescript-types@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@parcel/transformer-typescript-types@npm:2.2.1"
+  dependencies:
+    "@parcel/diagnostic": ^2.2.1
+    "@parcel/plugin": ^2.2.1
+    "@parcel/source-map": ^2.0.0
+    "@parcel/ts-utils": ^2.2.1
+    nullthrows: ^1.1.1
+  peerDependencies:
+    typescript: ">=3.0.0"
+  checksum: 71cfaaac62b9dc154ab872eec8fe3940e767224a442f0c7e3eff23d53a2b60789d59efa0d59692d7f70b96424b2fcb5860be662c30d3ea82a03baf60df98258d
+  languageName: node
+  linkType: hard
+
+"@parcel/ts-utils@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@parcel/ts-utils@npm:2.2.1"
+  dependencies:
+    nullthrows: ^1.1.1
+  peerDependencies:
+    typescript: ">=3.0.0"
+  checksum: 9781ff400390d3193cbf507bcd705aebbbcca3bafef61ed58ad96a7bc59f5abdc48320cfd24ae7f3d92cbd5a59187285b99c581d4f6a4f53298486d70e4da509
   languageName: node
   linkType: hard
 
@@ -3743,7 +3778,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "okami@workspace:."
   dependencies:
+    "@parcel/packager-ts": ^2.2.1
+    "@parcel/transformer-typescript-types": ^2.2.1
     parcel: ^2.2.1
+    typescript: ">=3.0.0"
   languageName: unknown
   linkType: soft
 
@@ -5082,6 +5120,26 @@ __metadata:
   version: 0.21.3
   resolution: "type-fest@npm:0.21.3"
   checksum: e6b32a3b3877f04339bae01c193b273c62ba7bfc9e325b8703c4ee1b32dc8fe4ef5dfa54bf78265e069f7667d058e360ae0f37be5af9f153b22382cd55a9afe0
+  languageName: node
+  linkType: hard
+
+"typescript@npm:>=3.0.0":
+  version: 4.5.4
+  resolution: "typescript@npm:4.5.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 59f3243f9cd6fe3161e6150ff6bf795fc843b4234a655dbd938a310515e0d61afd1ac942799e7415e4334255e41c2c49b7dd5d9fd38a17acd25a6779ca7e0961
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@>=3.0.0#~builtin<compat/typescript>":
+  version: 4.5.4
+  resolution: "typescript@patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 2e488dde7d2c4a2fa2e79cf2470600f8ce81bc0563c276b72df8ff412d74456ae532ba824650ae936ce207440c79720ddcfaa25e3cb4477572b8534fa4e34d49
   languageName: node
   linkType: hard
 
