@@ -1,4 +1,7 @@
 {
   "name": "okami",
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "devDependencies": {
+    "parcel": "^2.2.1"
+  }
 }
