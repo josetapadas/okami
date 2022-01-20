@@ -1,3 +1,9 @@
-export function add(a: number, b: number): number {
-    return a + b;
+import {
+    createElement,
+    createText,
+} from './virtualDOM';
+
+export {
+    createElement,
+    createText, 
 }
